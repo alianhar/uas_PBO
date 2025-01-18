@@ -8,3 +8,4 @@ julia : diagram2 (use case, flowchart, dkk)
 
 
 ali gausah kerja
+ali ga guna
