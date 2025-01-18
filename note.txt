@@ -1,0 +1,7 @@
+tugas2 : CRUD
+
+ali : fitur update,fitur login,
+rehan : tampilan
+dapa : fitur create
+alpen : fitur delete
+julia : diagram2 (use case, flowchart, dkk)
