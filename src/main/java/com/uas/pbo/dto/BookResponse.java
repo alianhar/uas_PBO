@@ -4,36 +4,36 @@ public class BookResponse {
     private Long id;
     private String title;
     private String author;
-    private Double price;
-    private Integer stock;
 
     // Constructor
-    public BookResponse(Long id, String title, String author, Double price, Integer stock) {
+    public BookResponse(Long id, String title, String author) {
         this.id = id;
         this.title = title;
         this.author = author;
-        this.price = price;
-        this.stock = stock;
     }
 
-    // Getters
+    // Getter dan Setter
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getAuthor() {
         return author;
     }
 
-    public Double getPrice() {
-        return price;
-    }
-
-    public Integer getStock() {
-        return stock;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }
