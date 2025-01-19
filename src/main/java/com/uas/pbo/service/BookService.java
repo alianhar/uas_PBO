@@ -31,4 +31,11 @@ public class BookService {
             savedBook.getStock()
         );
     }
+    public void deleteBook(Long id) {
+        if (bookRepository.existsById(id)) {
+            bookRepository.deleteById(id);
+        } else {
+            throw new RuntimeException("Book with ID" + id + "not found");
+        }
+    }
 }
