@@ -3,9 +3,12 @@ package com.uas.pbo.dto;
 public class BookCreateRequest {
     private String title;
     private String author;
+    private String description; // Kolom deskripsi buku
     private Double price;
     private Integer stock;
+    private Integer categoryId; // Kolom kategori buku
 
+    // Getter dan Setter
     public String getTitle() {
         return title;
     }
@@ -22,6 +25,14 @@ public class BookCreateRequest {
         this.author = author;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public Double getPrice() {
         return price;
     }
@@ -36,5 +47,13 @@ public class BookCreateRequest {
 
     public void setStock(Integer stock) {
         this.stock = stock;
+    }
+
+    public Integer getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Integer categoryId) {
+        this.categoryId = categoryId;
     }
 }
