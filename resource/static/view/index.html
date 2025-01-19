@@ -8,7 +8,7 @@
     <title>Sidebar With Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/dd209636af.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -35,20 +35,20 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="fa-solid fa-book-bookmark"></i>
-                        <span>Opsi Buku</span>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analisis</span>
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse m " data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link" type="button">
-                                <i class="fa-solid fa-book"></i>
+                                <i class="fa-solid fa-book-bookmark"></i>
                                 <span>Kategori</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">
-                                <i class="fa-solid fa-cart-plus"></i>
-                                <span>Troli</span>
+                                <i class="fa-solid fa-swatchbook"></i>
+                                <span>Penjualan</span>
                             </a>
                         </li>
                     </ul>
@@ -66,13 +66,13 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-icon pe-md-0 text-white" data-bs-toggle="dropdown">
                                 <span>Hallo Admin👋</span>
-                                <img src="asset/Avatar.jpg" alt="" class="avatar img-fluid">
+                                <img src="/asset/Avatar.jpg" alt="" class="avatar img-fluid">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end rounded">
                                 <div class="dropdown-devider">
                                     <a href="#" class="dropdown-item">
-                                        <i class="fa-solid fa-gear"></i>
-                                        <span>Pengaturan</span>
+                                        <i class="fa-solid fa-user-gear"></i>
+                                        <span>Akun</span>
                                     </a>
                                 </div>
                                 <div class="dropdown-devider">
@@ -92,89 +92,167 @@
                     <div class="mb-2">
                         <h3 class="fw-medium fs-4 mb-3">Laporan penjualan</h3>
                         <div class="row g-3 mb-5">
+                            <!-- Card 1 -->
                             <div class="col-12 col-md-3">
-                                <div class="card  border-0">
+                                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard1">
                                     <div class="card-body py-4">
                                         <h5 class="mb-2 fw-bold">
                                             Buku Masuk<br>Minggu ini
                                         </h5>
                                         <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-award"></i>
-                                            <span>10 Buku</span>
+                                            <i class="fa-solid fa-award text-warning"></i>
+                                            <span class="badge text-success me-2">10 Buku</span>
                                         </p>
                                         <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +120
-                                            </span>
-                                            <span class="fw-bold">
-                                                <i class="fa-solid fa-arrow-up-right-dots"></i>
-                                            </span>
+                                            <span class="badge text-success me-2">+120</span>
+                                            <span class="fw-bold"><i class="fa-solid fa-arrow-up-right-dots"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Card 2 -->
                             <div class="col-12 col-md-3">
-                                <div class="card  border-0">
+                                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard2">
                                     <div class="card-body py-4">
                                         <h5 class="mb-2 fw-bold">
                                             Buku Terjual<br>Minggu ini
                                         </h5>
                                         <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-award"></i>
-                                            <span>15 Buku</span>
+                                            <i class="fa-solid fa-award text-warning"></i>
+                                            <span class="badge text-success me-2">15 Buku</span>
                                         </p>
                                         <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +32
-                                            </span>
-                                            <span class="fw-bold">
-                                                <i class="fa-solid fa-arrow-up-right-dots"></i>
-                                            </span>
+                                            <span class="badge text-success me-2">+32</span>
+                                            <span class="fw-bold"><i class="fa-solid fa-arrow-up-right-dots"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Card 3 -->
                             <div class="col-12 col-md-3">
-                                <div class="card border-0">
+                                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard3">
                                     <div class="card-body py-4">
                                         <h5 class="mb-2 fw-bold">
                                             Buku Terlaris<br>Minggu ini
                                         </h5>
                                         <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-award"></i>
-                                            <span>3 Buku</span>
+                                            <i class="fa-solid fa-award text-warning"></i>
+                                            <span class="badge text-success me-2">3 Buku</span>
                                         </p>
                                         <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +7
-                                            </span>
-                                            <span class="fw-bold">
-                                                <i class="fa-solid fa-arrow-up-right-dots"></i>
-                                            </span>
+                                            <span class="badge text-success me-2">+7</span>
+                                            <span class="fw-bold"><i class="fa-solid fa-arrow-up-right-dots"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Card 4 -->
                             <div class="col-12 col-md-3">
-                                <div class="card border-0">
+                                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard4">
                                     <div class="card-body py-4">
                                         <h5 class="mb-2 fw-bold">
                                             Kategori Terlaris<br>Minggu ini
                                         </h5>
                                         <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-award"></i>
-                                            <span>1 Buku</span>
+                                            <i class="fa-solid fa-award text-warning"></i>
+                                            <span class="badge text-success me-2">2 Kategori</span>
                                         </p>
                                         <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +4
-                                            </span>
-                                            <span class="fw-bold">
-                                                <i class="fa-solid fa-arrow-up-right-dots"></i>
-                                            </span>
+                                            <span class="badge text-success me-2">+4</span>
+                                            <span class="fw-bold"><i class="fa-solid fa-arrow-up-right-dots"></i></span>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 1 -->
+                <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="modalCard1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCard1Label">Laporan Buku Masuk Minggu Ini</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Buku masuk minggu ini adalah 10 buku. Total tambahan buku yang sebelumnya 110 menjadi
+                                total 120.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="modalCard2" tabindex="-1" aria-labelledby="modalCard2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCard2Label">Laporan Buku Terjual Minggu Ini</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Buku terjual minggu ini adalah 15 buku. Total buku yang terjual selama ini menjadi 32
+                                buku.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="modalCard3" tabindex="-1" aria-labelledby="modalCard3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCard3Label">Laporan Buku Terlaris Minggu Ini</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Judul: Laskar Pelangi, Author: Andrea Hirata</li>
+                                    <li>Judul: Bumi Manusia, Author: Pramoedya Ananta Toer</li>
+                                    <li>Judul: Negeri 5 Menara, Author: Ahmad Fuadi</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="modalCard4" tabindex="-1" aria-labelledby="modalCard4Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCard4Label">Laporan Kategori Terlaris Minggu Ini</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Kategori terlaris minggu ini adalah 2 kategori buku:
+                                <ul>
+                                    <li>Fiksi</li>
+                                    <li>Non-Fiksi</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                             </div>
                         </div>
                     </div>
@@ -212,10 +290,11 @@
                                         <td class="text-center">Rp.95,000</td>
                                         <td class="text-center">Novel</td>
                                         <td class="text-center">15</td>
-                                        <td class="text-center"><a href="">
+                                        <td class="text-center">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editBukuModal">
                                                 <i class="fa-solid fa-file-pen text-primary"></i>
                                             </a>
-                                            <a href="">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hapusBukuModal">
                                                 <i class="fa-solid fa-trash text-danger"></i>
                                             </a>
                                         </td>
@@ -229,10 +308,11 @@
                                         <td class="text-center">Rp. 85,000</td>
                                         <td class="text-center">Novel</td>
                                         <td class="text-center">12</td>
-                                        <td class="text-center"><a href="">
+                                        <td class="text-center">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editBukuModal">
                                                 <i class="fa-solid fa-file-pen text-primary"></i>
                                             </a>
-                                            <a href="">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hapusBukuModal">
                                                 <i class="fa-solid fa-trash text-danger"></i>
                                             </a>
                                         </td>
@@ -246,10 +326,11 @@
                                         <td class="text-center">Rp. 90,000</td>
                                         <td class="text-center">Sejarah</td>
                                         <td class="text-center">8</td>
-                                        <td class="text-center"><a href="">
+                                        <td class="text-center">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editBukuModal">
                                                 <i class="fa-solid fa-file-pen text-primary"></i>
                                             </a>
-                                            <a href="">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hapusBukuModal">
                                                 <i class="fa-solid fa-trash text-danger"></i>
                                             </a>
                                         </td>
@@ -263,10 +344,11 @@
                                         <td class="text-center">Rp. 100,000</td>
                                         <td class="text-center">Fiksi Ilmiah</td>
                                         <td class="text-center">10</td>
-                                        <td class="text-center"><a href="">
+                                        <td class="text-center">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editBukuModal">
                                                 <i class="fa-solid fa-file-pen text-primary"></i>
                                             </a>
-                                            <a href="">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hapusBukuModal">
                                                 <i class="fa-solid fa-trash text-danger"></i>
                                             </a>
                                         </td>
@@ -281,32 +363,198 @@
                                         <td class="text-center">Rp. 80,000</td>
                                         <td class="text-center">Sastra</td>
                                         <td class="text-center">21</td>
-                                        <td class="text-center"><a href="">
+                                        <td class="text-center">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editBukuModal">
                                                 <i class="fa-solid fa-file-pen text-primary"></i>
                                             </a>
-                                            <a href="">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#hapusBukuModal">
                                                 <i class="fa-solid fa-trash text-danger"></i>
                                             </a>
                                         </td>
-                                    </tr </tbody>
+                                    </tr>
+                                </tbody>
                             </table>
                             <nav>
-                                <div class="mt-4">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item">
-                                            <a class="page-link bg-primary text-white" href="#">Previous
-                                            </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link bg-primary text-white" href="#">Next
-                                            </a>
-                                        </li>
-                                    </ul>
+                                </tbody>
+                                </table>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link bg-primary text-white" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link bg-primary text-white" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <button class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#tambahBukuModal">Tambah Buku
+                                    </button>
                                 </div>
                             </nav>
+                        </div>
+                    </div>
+                    <!-- Modal Edit Buku -->
+                    <div class="modal fade" id="editBukuModal" tabindex="-1" aria-labelledby="editBukuModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="editBukuModalLabel">Edit Buku</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="formEditBuku">
+                                        <div class="mb-3">
+                                            <label for="editJudul" class="form-label">Judul</label>
+                                            <input type="text" class="form-control" id="editJudul" name="judul"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editAuthor" class="form-label">Author</label>
+                                            <input type="text" class="form-control" id="editAuthor" name="author"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editDeskripsi" class="form-label">Deskripsi</label>
+                                            <textarea class="form-control" id="editDeskripsi" name="deskripsi" rows="3"
+                                                required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editHarga" class="form-label">Harga</label>
+                                            <input type="number" class="form-control" id="editHarga" name="harga"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editKategori" class="form-label">Kategori</label>
+                                            <select class="form-control" id="editKategori" name="kategori" required>
+                                                <option value="" disabled selected>Pilih Kategori</option>
+                                                <option value="Fiksi">Fiksi</option>
+                                                <option value="Non-Fiksi">Non-Fiksi</option>
+                                                <option value="Biografi">Biografi</option>
+                                                <option value="Sejarah">Sejarah</option>
+                                                <option value="Sastra">Sastra</option>
+                                                <option value="Fiksi Ilmiah">Fiksi Ilmiah</option>
+                                                <option value="Fantasi">Fantasi</option>
+                                                <option value="Romansa">Romansa</option>
+                                                <option value="Misteri/Detektif">Misteri/Detektif</option>
+                                                <option value="Horor">Horor</option>
+                                                <option value="Anak-Anak">Anak-Anak</option>
+                                                <option value="Pendidikan">Pendidikan</option>
+                                                <option value="Komik/Graphic Novel">Komik/Graphic Novel</option>
+                                                <option value="Puisi">Puisi</option>
+                                                <option value="Pengembangan Diri">Pengembangan Diri</option>
+                                                <option value="Bisnis">Bisnis</option>
+                                                <option value="Teknologi">Teknologi</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editStok" class="form-label">Stok</label>
+                                            <input type="number" class="form-control" id="editStok" name="stok"
+                                                required>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Hapus Buku -->
+                    <div class="modal fade" id="hapusBukuModal" tabindex="-1" aria-labelledby="hapusBukuModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="hapusBukuModalLabel">Konfirmasi Hapus</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Yakin akan menghapus Buku?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Batal</button>
+                                    <button type="button" class="btn btn-danger">Hapus</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Tambah Buku -->
+                    <div class="modal fade" id="tambahBukuModal" tabindex="-1" aria-labelledby="tambahBukuLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="tambahBukuLabel">Tambah Buku</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="formTambahBuku">
+                                        <div class="mb-3">
+                                            <label for="judul" class="form-label">Judul :</label>
+                                            <input type="text" class="form-control" id="judul" name="judul" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="author" class="form-label">Author :</label>
+                                            <input type="text" class="form-control" id="author" name="author" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="deskripsi" class="form-label">Deskripsi :</label>
+                                            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3"
+                                                required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="editKategori" class="form-label">Kategori</label>
+                                            <select class="form-control" id="editKategori" name="kategori" required>
+                                                <option value="" disabled selected>Pilih Kategori</option>
+                                                <option value="Fiksi">Fiksi</option>
+                                                <option value="Non-Fiksi">Non-Fiksi</option>
+                                                <option value="Biografi">Biografi</option>
+                                                <option value="Sejarah">Sejarah</option>
+                                                <option value="Sastra">Sastra</option>
+                                                <option value="Fiksi Ilmiah">Fiksi Ilmiah</option>
+                                                <option value="Fantasi">Fantasi</option>
+                                                <option value="Romansa">Romansa</option>
+                                                <option value="Misteri/Detektif">Misteri/Detektif</option>
+                                                <option value="Horor">Horor</option>
+                                                <option value="Anak-Anak">Anak-Anak</option>
+                                                <option value="Pendidikan">Pendidikan</option>
+                                                <option value="Komik/Graphic Novel">Komik/Graphic Novel</option>
+                                                <option value="Puisi">Puisi</option>
+                                                <option value="Pengembangan Diri">Pengembangan Diri</option>
+                                                <option value="Bisnis">Bisnis</option>
+                                                <option value="Teknologi">Teknologi</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="kategori" class="form-label">Kategori :</label>
+                                            <input type="text" class="form-control" id="kategori" name="kategori"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="stok" class="form-label">Stok :</label>
+                                            <input type="number" class="form-control" id="stok" name="stok" required>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Batal</button>
+                                    <button type="submit" class="btn btn-success" form="formTambahBuku">Tambah</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,7 +565,9 @@
                         <div class="col-6 text-strat">
                             <a href="#" class="text-body-secondary">
                                 <strong>ZURADA Bookstore
-                                    <i class="fa-regular fa-copyright"></i>
+                                    <span>
+                                        <i class="fa-regular fa-copyright"></i>
+                                    </span>
                                 </strong>
                             </a>
                         </div>
@@ -329,7 +579,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

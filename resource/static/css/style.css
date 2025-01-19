@@ -204,6 +204,17 @@ tr.highlight th {
     flex: 1 1 auto;
 }
 
+.modal .form-label {
+    font-weight: bold;
+}
+.card {
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     background-color: #f5f5f5;
     padding: 1rem 0.875rem;
