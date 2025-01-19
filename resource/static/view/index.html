@@ -90,15 +90,13 @@
             <main class="content px-3 py-4">
                 <div class="container-fluid">
                     <div class="mb-2">
-                        <h3 class="fw-medium fs-4 mb-3">Laporan penjualan</h3>
+                        <h3 class="fw-medium fs-4 mb-3">Laporan Penjualan</h3>
                         <div class="row g-3 mb-5">
                             <!-- Card 1 -->
                             <div class="col-12 col-md-3">
                                 <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard1">
                                     <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Buku Masuk<br>Minggu ini
-                                        </h5>
+                                        <h5 class="mb-2 fw-bold">Buku Masuk<br>Minggu ini</h5>
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-award text-warning"></i>
                                             <span class="badge text-success me-2">10 Buku</span>
@@ -114,9 +112,7 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard2">
                                     <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Buku Terjual<br>Minggu ini
-                                        </h5>
+                                        <h5 class="mb-2 fw-bold">Buku Terjual<br>Minggu ini</h5>
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-award text-warning"></i>
                                             <span class="badge text-success me-2">15 Buku</span>
@@ -132,9 +128,7 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard3">
                                     <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Buku Terlaris<br>Minggu ini
-                                        </h5>
+                                        <h5 class="mb-2 fw-bold">Buku Terlaris<br>Minggu ini</h5>
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-award text-warning"></i>
                                             <span class="badge text-success me-2">3 Buku</span>
@@ -150,12 +144,10 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0" data-bs-toggle="modal" data-bs-target="#modalCard4">
                                     <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Kategori Terlaris<br>Minggu ini
-                                        </h5>
+                                        <h5 class="mb-2 fw-bold">Kategori Terlaris<br>Minggu ini</h5>
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-award text-warning"></i>
-                                            <span class="badge text-success me-2">2 Kategori</span>
+                                            <span class="badge text-success me-2">2 kategori</span>
                                         </p>
                                         <div class="mb-0">
                                             <span class="badge text-success me-2">+4</span>
@@ -168,95 +160,154 @@
                     </div>
                 </div>
 
-                <!-- Modal 1 -->
+                <!-- Modal Card 1 -->
                 <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="modalCard1Label"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCard1Label">Laporan Buku Masuk Minggu Ini</h5>
+                                <h5 class="modal-title" id="modalCard1Label">Buku Masuk Minggu Ini</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Buku masuk minggu ini adalah 10 buku. Total tambahan buku yang sebelumnya 110 menjadi
-                                total 120.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Judul Buku</th>
+                                            <th>Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Total Buku Sebelumnya</td>
+                                            <td>110</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buku Masuk Minggu Ini</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Buku Sekarang</td>
+                                            <td>120</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modal 2 -->
+                <!-- Modal Card 2 -->
                 <div class="modal fade" id="modalCard2" tabindex="-1" aria-labelledby="modalCard2Label"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCard2Label">Laporan Buku Terjual Minggu Ini</h5>
+                                <h5 class="modal-title" id="modalCard2Label">Buku Terjual Minggu Ini</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Buku terjual minggu ini adalah 15 buku. Total buku yang terjual selama ini menjadi 32
-                                buku.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Judul Buku</th>
+                                            <th>Jumlah Terjual</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Total Terjual Sebelumnya</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buku Terjual Minggu Ini</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Buku Terjual</td>
+                                            <td>32</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modal 3 -->
+                <!-- Modal Card 3 -->
                 <div class="modal fade" id="modalCard3" tabindex="-1" aria-labelledby="modalCard3Label"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCard3Label">Laporan Buku Terlaris Minggu Ini</h5>
+                                <h5 class="modal-title" id="modalCard3Label">Buku Terlaris Minggu Ini</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <ul>
-                                    <li>Judul: Laskar Pelangi, Author: Andrea Hirata</li>
-                                    <li>Judul: Bumi Manusia, Author: Pramoedya Ananta Toer</li>
-                                    <li>Judul: Negeri 5 Menara, Author: Ahmad Fuadi</li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Judul Buku</th>
+                                            <th>Author</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Laskar Pelangi</td>
+                                            <td>Andrea Hirata</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bumi Manusia</td>
+                                            <td>Pramoedya Ananta Toer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Negeri 5 Menara</td>
+                                            <td>Ahmad Fuadi</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modal 4 -->
+                <!-- Modal Card 4 -->
                 <div class="modal fade" id="modalCard4" tabindex="-1" aria-labelledby="modalCard4Label"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCard4Label">Laporan Kategori Terlaris Minggu Ini</h5>
+                                <h5 class="modal-title" id="modalCard4Label">Kategori Terlaris Minggu Ini</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Kategori terlaris minggu ini adalah 2 kategori buku:
-                                <ul>
-                                    <li>Fiksi</li>
-                                    <li>Non-Fiksi</li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Kategori</th>
+                                            <th>Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fiksi</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Non-Fiksi</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row gap-1">
                     <div class="input-group mb-3" style="width: 30%;">
                         <input type="text" class="form-control" placeholder="Cari Buku" aria-label="Cari Buku"
